@@ -417,7 +417,8 @@ background-repeat: no-repeat;
 @media screen and (min-width:768px){
     .main-page-container{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img-tablet.jpg);
-    }
+        padding: 112px 0;
+}
 }
 
 @media screen and (min-width:768px) and (min-resolution: 192dpi){
@@ -442,3 +443,33 @@ background-repeat: no-repeat;
     }
 }
 
+
+
+
+.main-page-text{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        max-width:216px;
+            margin-right: auto;
+                margin-left: auto;
+}
+
+
+@media screen and (min-width:768px){
+    .main-page-text{
+        max-width:496px;
+            font-size: 56px;
+           
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .main-page-text {
+        max-width: 496px;
+        font-size: 56px;
+    }
+}
