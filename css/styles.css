@@ -651,7 +651,9 @@ margin-right: auto;
 
 
  ---OUR TEAM---
-
+.works{
+    padding: 96px 0 96px;
+}
 
 .team-title{
         font-weight: 700;
@@ -660,7 +662,8 @@ margin-right: auto;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .team-card {
@@ -788,7 +791,7 @@ margin-right: auto;
 
 
 .portfolio{
-    gap: 48px;
+    max-width:736px;
     display: flex;
     flex-direction: column;
 }
@@ -842,6 +845,7 @@ flex-wrap: wrap;
 .list {
     width: calc((100% - 72px) / 2);
 }
+
 
 }
 
