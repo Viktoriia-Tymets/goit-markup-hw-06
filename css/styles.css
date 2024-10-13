@@ -255,6 +255,7 @@ opacity: 0;
 .mobile-menu-container{
     position: relative;
         padding-top: 72px;
+        padding-bottom:40px ;
             display: flex;
             flex-direction: column;
             height: 100%;
@@ -286,6 +287,11 @@ display: flex;
 
 }
 
+.mobile-menu-nav-list{
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
 
 
 .mobile-nav{
@@ -295,12 +301,34 @@ display: flex;
         letter-spacing: 0.02em;
     color: #2e2f42;
   flex-direction: column;
- display: flex; 
-margin-bottom: 40px;
+
+}
+
+.mobile-menu-address{
+    margin-bottom: 48px;
+}
+
+
+.mobile-menu-contact-tel{
+font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+        color: #4d5ae5;
+}
+
+.mobile-nav-studio{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+    color: #4d5ae5;
 }
 
 .mobile-menu-contact{
     font-weight: 500;
+    font-style: normal;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -324,35 +352,32 @@ gap:24px
     color: #4d5ae5;
 }
 
+
+.mobile-menu-media-list{
+    width:40px;
+    height: 40px;
+  
+
+}
+
 .social-list{
     flex-direction: row;
     display: flex;
         align-items: center;
-        margin-bottom: 48px;
       gap: 40px;
         
 }
 
 .icons-media-list{
-width: 40px;
-    height: 40px;
-
-}
-
-.social-media-mobile{
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    display: flex;
+background-color: #4d5ae5;
+border-radius: 50%;
+display: flex;
 width: 100%;
-    height: 100%;
+height: 100%;
+align-items: center;
+justify-content: center;
+
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width:768px){
     .mobile-menu{
@@ -373,22 +398,18 @@ width: 100%;
 
 
 
-   ---- HERO SECTION----
-
-
 
 .main-page-container{
 max-width: 320px;
     min-height: 432px;
-background: #2e2f42;
+background-color: #2e2f42;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img-mobile.png);
 background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin:0;
+    margin:0 auto;
     padding: 72px 0 72px 0;
   align-items: center;
-  
 
 }
 
@@ -404,6 +425,7 @@ background-repeat: no-repeat;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img-tablet.jpg);
         padding: 112px 0;
         max-width: 768px;
+        margin:0 auto;
         
 }
 }
@@ -418,7 +440,7 @@ background-repeat: no-repeat;
 @media screen and (min-width:1158px) {
     .main-page-container {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-        max-width: 1140px;
+        max-width: 1440px;
         min-height: 600px;
         padding: 188px 0;
     }
@@ -445,6 +467,7 @@ background-repeat: no-repeat;
         max-height: 160px;
             margin-right: auto;
                 margin-left: auto;
+                margin-bottom:72px;
           
 }
 
@@ -455,8 +478,17 @@ background-repeat: no-repeat;
             font-size: 56px;
             line-height: 1.07143;
             min-height: 120px;
+            margin-bottom: 36px;
     }
 }
+
+@media screen and (min-width:1158px){
+    .main-page-text{
+        margin-bottom:48px;
+    }
+}
+
+
 
 .main-page-btn{
     border-radius: 4px;
@@ -495,11 +527,21 @@ margin-right: auto;
 }
 
 .container{
-    max-width:318px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width:320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left:auto;
     margin-right:auto;
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -562,9 +604,7 @@ margin-right: auto;
 
 
 @media screen and (min-width:1158px){
-    .container{
-        max-width: 1128px;
-    }
+   
 .box-icon{
         border: 1px solid #8e8f99;
         border-radius: 4px;
@@ -589,18 +629,7 @@ margin-right: auto;
 }
 
 }
-
-
-.benefits-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11111;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
-
+ 
 
 
 @media screen and (min-width:1158px){
@@ -629,11 +658,13 @@ margin-right: auto;
 
 
 
+ 
 
+ 
 
- ---OUR TEAM---
 .team-members{
-    padding: 96px 0 96px;
+   padding:96px 0 96px;
+    background: #f4f4fd;
 }
 
 .team-title{
@@ -652,6 +683,7 @@ margin-right: auto;
     gap: 72px;
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .team-inf{
@@ -725,6 +757,7 @@ margin-right: auto;
 
 
 @media screen and (min-width:768px){
+
 .team-card {
        row-gap: 64px;
        column-gap:24px;
@@ -751,7 +784,7 @@ margin-right: auto;
 
 
 
------PORTFOLIO-----
+ 
 
 
 
@@ -818,8 +851,7 @@ margin-right: auto;
 
 @media screen and (min-width:768px){
 .portfolio{
-    row-gap: 72px;
-        column-gap: 24px;
+gap: 24px;
 flex-direction:row;
 flex-wrap: wrap;
 justify-content: center;
@@ -827,8 +859,7 @@ justify-content: center;
 }
 
 .list {
-    width: calc((100% - 72px) / 2);
-
+    width: calc((100% -24px) / 2);
 }
 }
 
@@ -860,7 +891,6 @@ justify-content: center;
 .image-container {
     position: relative;
     overflow: hidden;
-
 }
 
 .overlay {
@@ -891,7 +921,10 @@ justify-content: center;
 
 
 
-----FOOTER----
+
+
+
+
 .footer{
     padding-top:96px;
     padding-bottom:96px;
@@ -907,6 +940,7 @@ background-color: #2e2f42;
 
 
 .logo-bottom {
+font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -948,6 +982,7 @@ max-width: 288px;
     color: #fff;
         display: flex;
             justify-content: center;
+            margin-bottom:16px
 }
 
 .social-media-list {
@@ -1004,6 +1039,7 @@ gap: 16px;
     color: #fff;
 display: flex;
 justify-content: center;
+margin-bottom:16px;
 
 }
 
@@ -1014,6 +1050,8 @@ justify-content: center;
     height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     opacity: 0.3;
+    margin-bottom:16px;
+    background:transparent;
 
 }
 
@@ -1024,6 +1062,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    padding-left: 16px;
 
 }
 
@@ -1045,8 +1084,8 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     justify-content: center;
     cursor: pointer;
     border: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:auto;
+    margin-right:auto;
 
 }
 
@@ -1065,9 +1104,10 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         padding-right: 16px;
     justify-content: flex-start;
         align-items: baseline;
-        column-gap: 72px;
-        row-gap: 24px;
+        row-gap: 72px;
+        column-gap: 24px;
      flex-wrap: wrap;
+     flex-direction:row;
     }
 
     .logo-bottom{
@@ -1090,6 +1130,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     max-width: 208px;
         display: flex;
             flex-direction: column;
+            gap:0;
         
   
  }
@@ -1104,6 +1145,7 @@ margin-block-end: 1em;
 margin-inline-start: 0px;
 margin-inline-end: 0px;
 unicode-bidi: isolate;
+margin-top:0;
 }
 
 .subscribe-footer{
@@ -1118,6 +1160,14 @@ display: flex;
     align-items: center;
 }
 
+.subscribe-form{
+    display:flex;
+    gap:24px;
+}
+
+.subscribe-form-input{
+    max-width:264px;
+}
 
 }
 
@@ -1183,9 +1233,6 @@ display: flex;
 
 
 
-----MODAL MENU----
-
-
 
 
 
@@ -1236,10 +1283,7 @@ display: flex;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    max-width: 256px;
     margin-bottom: 16px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
