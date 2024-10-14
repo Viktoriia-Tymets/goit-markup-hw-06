@@ -318,6 +318,7 @@ font-weight: 500;
         color: #4d5ae5;
 }
 
+
 .mobile-nav-studio{
     font-weight: 700;
         font-size: 36px;
@@ -333,13 +334,11 @@ font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #434455;
-        
+      
 }
 
-.mobile-menu-address{
-gap:24px
 
-}
+
 
 
 .mobile-menu-contact:hover,
@@ -851,7 +850,8 @@ margin-right: auto;
 
 @media screen and (min-width:768px){
 .portfolio{
-gap: 24px;
+column-gap: 24px;
+row-gap:72px ;
 flex-direction:row;
 flex-wrap: wrap;
 justify-content: center;
